@@ -5,14 +5,12 @@ env: # Environt variable to pass to all tasks
 
 
 task:
-    name: Buildbomt
+    name: TenX CI
     timeout_in: 122m
     container:
       image: mrkhan007/aosp:latest
       cpu: 8
       memory: 30G
-    download_ccache_script:
-      - bash download_ccache    
     sync_script:
       - bash sync
     build_script:
