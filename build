@@ -1,7 +1,6 @@
 #!/bin/bash
-source build/envsetup.sh
+. b*/e*
 lunch aosp_RMX1921-userdebug
-cd /tmp/10x
 export CCACHE_DIR=/tmp/ccache  ##use additional flags if you need(optional)
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
